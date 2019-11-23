@@ -1,0 +1,94 @@
+{
+    "ERR_CODE": 0,
+    "ERR_MSG": "获取数据成功",
+    "DATA": {
+        "adData": [
+            {
+                "advertId": "4801266604",
+                
+                "link": "https://prodev.jd.com/mall/active/2v1S1wu5QCKwvrQibhnJaU7JUFGe/index.html",
+                "linkParam": "",
+                "linkType": "1",
+                "name": "",
+                "picHeight": 400,
+                "picWidth": 800,
+                "pictureUrl": "https://m.360buyimg.com/babel/jfs/t1/91787/39/1994/85259/5dc91fa8E25840abc/2fd7af0006497c40.jpg",
+                "reportId": null,
+                "desc": "",
+                "comment": []
+            },
+            {
+                "advertId": "4801265134",
+               
+                "link": "https://prodev.jd.com/mall/active/ETPd3VpCmeaQFKQqYYRAxYSdW9N/index.html",
+                "linkParam": "",
+                "linkType": "1",
+                "name": "",
+                "picHeight": 400,
+                "picWidth": 800,
+                "pictureUrl": "https://m.360buyimg.com/babel/jfs/t1/51633/16/15459/89185/5dc7cda8Ea88f9d00/9439337383b94864.jpg",
+                "reportId": null,
+                "desc": "",
+                "comment": []
+            },
+            {
+                "advertId": "4801261387",
+               
+                "link": "https://pro.jd.com/mall/active/2mNxhdsgRbr9hb6qmUPfaT1Y6skE/index.html",
+                "linkParam": "",
+                "linkType": "1",
+                "name": "",
+                "picHeight": 400,
+                "picWidth": 800,
+                "pictureUrl": "https://m.360buyimg.com/babel/jfs/t1/56491/40/15344/59468/5dc5850cE1c6e155a/6c24b5c2610c4ed5.jpg",
+                "reportId": null,
+                "desc": "",
+                "comment": []
+            },
+            {
+                "advertId": "4801260622",
+                
+                "link": "https://prodev.jd.com/mall/active/4G5xap7fUEzJkqP4ZqmpEc7xtV7v/index.html",
+                "linkParam": "",
+                "linkType": "1",
+                "name": "",
+                "picHeight": 400,
+                "picWidth": 800,
+                "pictureUrl": "https://m.360buyimg.com/babel/jfs/t1/91780/27/1777/138071/5dc52c29E3670ec65/cdeb07178f7f7a60.gif",
+                "reportId": null,
+                "desc": "",
+                "comment": []
+            },
+            {
+               
+                "link": "https://pro.jd.com/mall/active/2jtWCWfqUPUErBB8iCmUAB11oQ97/index.html",
+                "linkParam": "",
+                "linkType": "1",
+                "name": "",
+                "picHeight": 400,
+                "picWidth": 800,
+                "pictureUrl": "https://m.360buyimg.com/babel/jfs/t1/55156/36/15714/96533/5dca15f7Ec789f1ad/5a196d4f3bbfb2b4.jpg",
+                "reportId": null,
+                "desc": "",
+                "comment": []
+            },
+            {
+               
+                "link": "https://pro.jd.com/mall/active/m1ALDanNPJwNVgFKUp7Aq6aZp9S/index.html",
+                "linkParam": "",
+                "linkType": "1",
+                "name": "",
+                "picHeight": 400,
+                "picWidth": 800,
+                "pictureUrl": "https://m.360buyimg.com/babel/jfs/t1/64241/40/15153/149858/5dc8dc04E22be50f4/5a077cfdf79cd849.jpg",
+                "reportId": null,
+                "desc": "",
+                "comment": []
+            }
+        ],
+        "biDisplayTmpr": "1#6adb8c737f177dd4c65f932f209d9e85a189d6e0-0-619036-1-1",
+        "deliveryType": "1",
+        "groupId": "02911760",
+        "groupName": "【新】PC生鲜馆 轮播图广告"
+    }
+}

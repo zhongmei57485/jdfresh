@@ -1,0 +1,176 @@
+/*(1)清除默认样式*/
+html,
+body,
+ul,
+li,
+ol,
+dl,
+dd,
+dt,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+fieldset,
+legend,
+img,
+input,
+figure,
+figcaption,
+span {
+    margin: 0;
+    padding: 0;
+}
+
+/*去掉input等聚焦时的蓝色边框*/
+/*fieldset, img,input,button {*/
+/*border:0 none;*/
+/*padding:0;*/
+/*margin:0;*/
+/*outline-style:none;*/
+/*}   */
+
+ul,
+li,
+ol {
+    list-style: none;
+}
+
+select,
+input {
+    vertical-align: middle;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/*防止拖动*/
+textarea {
+    resize: none;
+}
+
+input,
+button {
+    border: 0;
+    outline: none;
+}
+
+/*  去掉图片低测默认的3像素空白缝隙，或者用display：block也可以*/
+/*  当a标签嵌套img,在IE6里会出现蓝色边框 方法：border:0 none;*/
+img {
+    border: 0 none;
+    /*vertical-align:middle;*/
+}
+
+table {
+    border-collapse: collapse;
+}
+
+a {
+    text-decoration: none;
+    color: #666;
+}
+
+
+
+/*2.添加公共样式*/
+/*body {
+    font:12px Arial,Verdana,"\5b8b\4f53";
+    color:#666;
+    background:#fff;
+}*/
+
+/*清除浮动（不管）*/
+.clearfix:before,
+.clearfix:after {
+    /*清楚浮动*/
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+    /*IE/7/6*/
+}
+
+/*设置h标签的大小，设置跟父亲一样大的字体font-size:100%;*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: normal;
+    font-size: 1em;
+}
+
+s,
+i,
+em {
+    font-style: normal;
+    text-decoration: none;
+}
+
+
+/*公共类*/
+
+.ac {
+    text-align: center;
+}
+
+.hide {
+    display: none;
+}
+
+.f12 {
+    font-size: 12px;
+}
+
+.f14 {
+    font-size: 14px;
+}
+
+.f16 {
+    font-size: 16px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+.success {
+    background: #EBF7E3 !important;
+    color: #618605 !important;
+    border: 1px solid #99D073 !important;
+}
+
+/* .icon {
+    font-size: 10px;
+    width: 1em;
+    height: 1em;
+    vertical-align: middle;
+    fill: currentColor;
+    overflow: hidden;
+} */
+
+/*给number input 去角标*/
+input[type='number']::-webkit-outer-spin-button,
+input[type='number']::-webkit-inner-spin-button {
+    -webkit-appearance: none !important;
+    margin: 0;
+}

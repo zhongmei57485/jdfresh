@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>产品详情页</title>
+    <!-- 引入favicon.ico图标 -->
+    <link rel="icon" href="favicon.ico">
+    <!-- 引入字体图标样式表 -->
+    <link rel="stylesheet" href="../iconfont/iconfont.css">
+    <!-- 引入初始化样式表 -->
+    <link rel="stylesheet" href="../css/base.css">
+    <!-- 引入公共样式表 -->
+    <link rel="stylesheet" href="../css/commom.css">
+    <link rel="stylesheet" href="../css/detail.css">
+    <style>
+        .w {
+            width: 1210px;
+            margin: 0 auto;
+        }
+
+        .fl {
+            float: left;
+        }
+
+        .fr {
+            float: right;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="tophead"></div>
+    <!--header头部模块制作 start-->
+    <header class="header w">
+        <!-- logo模块制作 -->
+        <div class="logo">
+            <h1>
+                <a href="../index.html" title="京东生鲜">京东生鲜</a>
+            </h1>
+        </div>
+        <!-- 搜索框模块制作 -->
+        <div class="search">
+            <input type="search" name="" id="" placeholder="德州鸡扒">
+            <button>搜全站</button>
+            <button style="background: #474e5c;">搜本店</button>
+        </div>
+        <!-- hotwords热点词模块制作 -->
+        <div class="hotwords">
+            <a href="###"> 高邮鸭蛋</a>
+            <a href="###">平遥牛肉</a>
+            <a href="###">遵义腊肠</a>
+            <a href="###">义乌糕点</a>
+            <a href="###">周城咸鹅</a>
+        </div>
+        <!-- 购物车模块制作 -->
+        <div class="shopcar arrow_icon" id="shopcar">
+
+            <a href="###">我的购物车</a>
+            <i class="count">0</i>
+            <span class="iconfont icon-gouwuchekong"></span>
+            <div class="dorpdown-layer">
+                <div class="prompt">
+                    <div class="nogoods"><b></b>购物车中还没有商品，赶紧选购吧！</div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--header头部模块制作 end-->
+    <div id="shop-head">
+        <div class="sh-brand sh-hot-wrap" style="height:110px;">
+            <div class="shop-logo-box" style="margin-top: -30px;">
+                <a href="###" class="shop-logo-link">
+                    <img src="../img/detailimgs/5a811638Nfa18ea62.jpg" alt="">
+                </a>
+            </div>
+            <div class="shop-name-box">
+                <span class="shop-name">水果京东自营专区</span>
+                <a href="javascript:void(0);" class="follow-me for-light-bg"
+                    style="position: absolute;bottom: 0;left: 0" id="shop-signs-attention">
+                    <span class="iconfont icon-shoucang"></span>
+                    关注我
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="sh-nav">
+        <div class="w">
+            <ul class="menu-list">
+                <li class="menu">
+                    <a href="index.html" style="font-weight: bold;color: #010101">首页</a>
+                </li>
+                <li class="menu">
+                    <a href="###" class="main-link">
+                        全部分类<span class="iconfont icon-jiantouarrow486"></span>
+                    </a>
+                </li>
+                <li class="menu">
+                    <a href="###" class="main-link">车厘子</a>
+                </li>
+                <li class="menu">
+                    <a href="###" class="main-link">芒果</a>
+                </li>
+                <li class="menu">
+                    <a href="###" class="main-link">苹果</a>
+                </li>
+                <li class="menu">
+                    <a href="###" class="main-link">火龙果</a>
+                </li>
+                <li class="menu">
+                    <a href="###" class="main-link">椰青</a>
+                </li>
+            </ul>
+            <div class="s-form">
+                <div class="form-body">
+                    <input type="text" class="J_shopLinkSearchInput s-inp" value="耙耙柑" maxlength="60" size="60">
+                    <input type="button" class="s-submit">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="crumb-wrap" id="crumb-wrap">
+        <div class="w">
+            <div class="crumb fl clearfix">
+                <div class="item first">
+                    <a href="###">生鲜</a>
+                </div>
+                <div class="item sep">&gt;</div>
+                <div class="item ">
+                    <a href="###">水果</a>
+                </div>
+                <div class="item sep">&gt;</div>
+                <div class="item ">
+                    <a href="###">柚子</a>
+                </div>
+                <div class="item sep">&gt;</div>
+                <div class="item ">
+                    <a href="###">京觅</a>
+                </div>
+                <div class="item sep">&gt;</div>
+                <div class="item ">
+                    <a href="###">京觅蜜柚</a>
+                </div>
+            </div>
+            <div class="contact fr clearfix"></div>
+        </div>
+    </div>
+    <!-- 详情产品模块制作start -->
+    <div class="main">
+        <div class="w">
+            <div class="product-intro clearfix">
+                <div class="preview-wrap">
+                    <div class="preview" id="preview">
+                        <div class="jqzoom main-img">
+                            <!-- <img id="spec-img" src="../img/detailimgs/good1.jpg" alt=""> 
+                                <div class="jqZoomPup">&nbsp;</div>
+                                <div class="zoomdiv" id="zoomdiv">
+                            <img class="bigimg" src="${item.bigImg}">
+                        </div>
+                            -->
+                        </div>
+                        <!-- <div class="zoomdiv">
+                            <img class="bigimg" src="">
+                        </div> -->
+                        <div class="spec-list">
+
+                            <a id="spec-forward" href="javascript:;" class="arrow-prev disabled">
+                                <i class="sprite-arrow-prev"></i>
+                            </a>
+                            <a id="spec-backward" href="javascript:;" class="arrow-next disabled">
+                                <i class="sprite-arrow-next"></i>
+                            </a>
+
+                            <div id="spec-list" class="spec-items">
+                                <ul class="lh">
+                                    <!-- <li class="img-hover">
+                                        <img src="../img/detailimgs/good1.jpg" data-img="1" width="50" height="50">
+                                    </li>
+                                    <li>
+                                        <img src="../img/detailimgs/good2.jpg" data-img="2" width="50" height="50">
+                                    </li>
+                                    <li>
+                                        <img src="../img/detailimgs/good3.jpg" data-img="3" width="50" height="50">
+                                    </li>
+                                    <li>
+                                        <img src="../img/detailimgs/good4.jpg" data-img="4" width="50" height="50">
+                                    </li>
+                                    <li>
+                                        <img src="../img/detailimgs/good5.jpg" data-img="5" width="50" height="50">
+                                    </li>
+                                    <li>
+                                        <img src="../img/detailimgs/good6.jpg" data-img="6" width="50" height="50">
+                                    </li> -->
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="preview-info">
+                            <div class="left-btns">
+                                <a class="follow J-follow" href="###">
+                                    <i class="sprite-follow-sku"></i>
+                                    <em>关注</em>
+                                </a>
+                                <a class="share J-share" href="###">
+                                    <i class="sprite-share"></i>
+                                    <em>分享</em>
+                                </a>
+                            </div>
+                            <div class="right-btns">
+                                <a class="report-btn" href="###">举报</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="itemInfo-wrap">
+                    <!-- <div class="sku-name">
+                        <img src="../img/detailimgs/59b73dbaN9c878bcc.png" alt="">
+                        精品琯溪蜜柚 白柚子1粒装 单果1.8-2.5斤 新鲜水果
+                    </div>
+                    <div class="summary summary-first">
+                        <div class="summary-price-wrap">
+                            <div class="summary-price J-summary-price">
+                                <div class="dt">京 东 价</div>
+                                <div class="dd">
+                                    <span class="p-price">
+                                        <span>￥</span>
+                                        <span class="price J-p-5050569">9.90</span>
+                                    </span>
+                                    <a class="notice J-notify-sale" href="###">降价通知</a>
+                                </div>
+                            </div>
+                            <div class="summary-info J-summary-info clearfix">
+                                <div id="comment-count" class="comment-count item fl">
+                                    <p class="comment">累计评价</p>
+                                    <a class="count J-comm-5050569" href="#none">25万+</a>
+                                </div>
+                            </div>
+                            <div id="summary-quan" class="li p-choose">
+                                <div class="dt">优 惠 券</div>
+                                <div class="dd">
+                                    <dl>
+                                        <dt class="fl"></dt>
+                                        <dd class="lh">
+                                            <a class="J-open-tb" href="#none">
+                                                <span class="quan-item">
+                                                    <s></s>
+                                                    <b></b>
+                                                    <span class="text">满199减50</span>
+                                                </span>
+                                                <span class="quan-item">
+                                                    <s></s>
+                                                    <b></b>
+                                                    <span class="text">满299减100</span>
+                                                </span>
+                                                <span class="quan-item">
+                                                    <s></s>
+                                                    <b></b>
+                                                    <span class="text">满499享5折</span>
+                                                </span>
+                                                <span class="more-btn">更多&gt;&gt;</span>
+                                            </a>
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="summary p-choose-wrap">
+                        <div class="summary-stock">
+                            <div class="dt">配 送 至</div>
+                            <div class="dd">
+                                <div class="store clearfix">
+                                    <div class="stock-address">
+                                        <div class="ui-area-text-wrap">
+                                            <div class="ui-area-text">广东广州市天河区</div>
+                                            <b></b>
+                                        </div>
+                                    </div>
+                                    <div id="store-prompt" class="store-prompt">
+                                        <strong>有货</strong>
+                                    </div>
+                                    <div class="J-promise-icon promise-icon fl promise-icon-more"
+                                        style="display: block;">
+                                        <div class="fl">支持</div>
+                                        <div class="services services--more" id="ns_services">
+                                            <div>
+                                                <a href="#">京准达</a>
+                                                <i>|</i>
+                                                <a href="#">自提</a>
+                                                <i>|</i>
+                                                <a href="#">闪电退款</a>
+                                                <i>|</i>
+                                                <a href="#">优鲜赔</a>
+                                            </div>
+                                            <div>
+                                                <a href="#">生鲜99元免基础运费（20kg内）</a>
+                                            </div>
+                                            <span class="arrow"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="summary-supply" class="li">
+                            <div class="dt">　　</div>
+                            <div class="dd">
+                                <div id="summary-service" class="summary-service">由
+                                    <span class="hl_red">京东</span> 发货,
+                                    并提供售后服务. 23:10前下单，预计
+                                    <b>明天(11月19日)</b>送达
+                                </div>
+                            </div>
+                        </div>
+                        <div id="summary-weight" class="li">
+                            <div class="dt">重　　量</div>
+                            <div class="dd">1.23kg</div>
+                        </div>
+                        <div class="summary-line"></div>
+                        <div id="choose-btns" class="choose-btns clearfix">
+                            <div class="choose-amount ">
+                                <div class="wrap-input">
+                                    <input class="text buy-num" id="buy-num" value="1" data-max="200">
+                                    <a class="btn-reduce" href="#none" data-disabled="1">-</a>
+                                    <a class="btn-add" data-disabled="1">+</a>
+                                </div>
+                            </div>
+                            <a href="mycart.html" id="InitCartUrl" class="btn-special1 btn-lg">加入购物车</a>
+                        </div>
+                        <div id="summary-tips" class="summary-tips">
+                            <div class="dt">温馨提示</div>
+                            <div class="dd">
+                                <ol class="tips-list clearfix">
+                                    <li class="local-txt">·不支持7天无理由退货</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 详情产品模块制作end -->
+    <div class="main2">
+        <div class="w">
+            <div id="shopRecSuit" class="ETab">
+                <div class="tab-main large">
+                    <ul>
+                        <li data-tab="trigger" class="J-shopRec-trigger shopRec-trigger current">
+                            店长推荐
+                        </li>
+                    </ul>
+                </div>
+                <div class="tab-con clearfix">
+                    <div class="J-shopRec-content shopRec-content">
+                        <ul class="plist plist-2" id="shop-reco">
+                            <li class="fore1">
+                                <div class="p-img">
+                                    <a href="###">
+                                        <img src="../img/detailimgs/a1.jpg" height="160" width="160">
+                                    </a>
+                                </div>
+                                <div class="p-name">
+                                    <a href="###">澳大利亚直采鲜橙 精品澳橙12粒 单果130-180g 水果生鲜进口橙子</a>
+                                </div>
+                                <div class="p-price">
+                                    <strong class="J-p-1599924">￥49.90</strong>
+                                </div>
+                            </li>
+                            <li class="fore1">
+                                <div class="p-img">
+                                    <a href="###">
+                                        <img src="../img/detailimgs/a2.jpg" height="160" width="160">
+                                    </a>
+                                </div>
+                                <div class="p-name">
+                                    <a href="###">澳大利亚直采鲜橙 精品澳橙12粒 单果130-180g 水果生鲜进口橙子</a>
+                                </div>
+                                <div class="p-price">
+                                    <strong class="J-p-1599924">￥49.90</strong>
+                                </div>
+                            </li>
+                            <li class="fore1">
+                                <div class="p-img">
+                                    <a href="###">
+                                        <img src="../img/detailimgs/a3.jpg" height="160" width="160">
+                                    </a>
+                                </div>
+                                <div class="p-name">
+                                    <a href="###">澳大利亚直采鲜橙 精品澳橙12粒 单果130-180g 水果生鲜进口橙子</a>
+                                </div>
+                                <div class="p-price">
+                                    <strong class="J-p-1599924">￥49.90</strong>
+                                </div>
+                            </li>
+                            <li class="fore1">
+                                <div class="p-img">
+                                    <a href="###">
+                                        <img src="../img/detailimgs/a4.jpg" height="160" width="160">
+                                    </a>
+                                </div>
+                                <div class="p-name">
+                                    <a href="###">澳大利亚直采鲜橙 精品澳橙12粒 单果130-180g 水果生鲜进口橙子</a>
+                                </div>
+                                <div class="p-price">
+                                    <strong class="J-p-1599924">￥49.90</strong>
+                                </div>
+                            </li>
+                            <li class="fore1">
+                                <div class="p-img">
+                                    <a href="###">
+                                        <img src="../img/detailimgs/a5.jpg" height="160" width="160">
+                                    </a>
+                                </div>
+                                <div class="p-name">
+                                    <a href="###">澳大利亚直采鲜橙 精品澳橙12粒 单果130-180g 水果生鲜进口橙子</a>
+                                </div>
+                                <div class="p-price">
+                                    <strong class="J-p-1599924">￥49.90</strong>
+                                </div>
+                            </li>
+                            <li class="fore1">
+                                <div class="p-img">
+                                    <a href="###">
+                                        <img src="../img/detailimgs/a6.jpg" height="160" width="160">
+                                    </a>
+                                </div>
+                                <div class="p-name">
+                                    <a href="###">澳大利亚直采鲜橙 精品澳橙12粒 单果130-180g 水果生鲜进口橙子</a>
+                                </div>
+                                <div class="p-price">
+                                    <strong class="J-p-1599924">￥49.90</strong>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main3">
+        <div class="w">
+            <div class="aside">
+                <div id="sp-search" class="m m-aside sp-search">
+                    <div class="mt">
+                        <h3>店内搜索</h3>
+                    </div>
+                    <div class="mc">
+                        <p class="sp-form-item1">
+                            <label for="sp-keyword">关键字：</label>
+                            <span>
+                                <input type="text" id="sp-keyword">
+                            </span>
+                        </p>
+                        <p class="sp-form-item2">
+                            <label for="sp-price">价　格：</label>
+                            <span>
+                                <input type="text" id="sp-price">
+                                到
+                                <input type="text" id="sp-price1">
+                            </span>
+                        </p>
+                        <p class="sp-form-item3">
+                            <span>
+                                <input type="submit" value="搜索">
+                            </span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="detail">
+                <div class="ETab" id="detail">
+                    <div class="tab-main large" data-fixed="pro-detail-hd-fixed">
+                        <ul>
+                            <li data-tab="trigger" data-anchor="#detail" class="current">商品介绍</li>
+                            <li data-tab="trigger" data-anchor="#detail">规格与包装</li>
+                            <li data-tab="trigger" data-anchor="#detail">售后保障</li>
+                            <li data-tab="trigger" data-offset="38" data-anchor="#comment">
+                                商品评价<s>(25万+)</s>
+                            </li>
+                            <li data-tab="trigger" data-anchor="#shop-similar-promotion">本店好评商品</li>
+                        </ul>
+                        <div class="extra">
+                            <div class="item addcart-mini">
+                                <div class="J-addcart-mini EDropdown" data-role="drop">
+                                    <div class="inner">
+                                        <div class="head" data-drop="head">
+                                            <a id="InitCartUrl-mini" class="btn-primary" href="cart.html">
+                                                加入购物车
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-con">
+                        <div data-tab="item" class="tab_item" style="display: block;">
+                            <div class="p-parameter">
+                                <ul id="parameter-brand" class="p-parameter-list">
+                                    <li title="京觅">
+                                        品牌：<a href="###">京觅</a>
+                                    </li>
+                                </ul>
+                                <ul class="parameter2 p-parameter-list">
+                                    <li title="京觅蜜柚">商品名称：京觅蜜柚</li>
+                                    <li title="5050569">商品编号：5050569</li>
+                                    <li title="1.23kg">商品毛重：1.23kg</li>
+                                    <li title="福建漳州">商品产地：福建漳州</li>
+                                    <li title="蜜柚">类别：蜜柚</li>
+                                    <li title="国产">国产/进口：国产</li>
+                                    <li title="福建">原产地：福建</li>
+                                </ul>
+                            </div>
+                            <div id="quality-life" class="quality-life">
+                                <div class="q-logo">
+                                    <img src="../img/detailimgs/5a965eb2Nf83fd68c.jpg" alt="品质生活">
+                                </div>
+                                <ul class="quality-icon">
+                                    <li class="J_fresh" title="京东检测">
+                                        <a href="###">
+                                            <i style="background:none">
+                                                <img src="../img/detailimgs/5a263008Nd41613d0.png" style="width:45px">
+                                            </i> <span>京东检测</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div data-tab="item" class="tab_item" style="display: none;">
+                            <div class="p-parameter">
+                                <ul class="p-parameter-list">
+                                    <li>
+                                        主体：<a href="###">
+                                            净含量
+                                            0.9kg</a>
+                                    </li>
+                                </ul>
+                                <ul class="parameter2 p-parameter-list">
+                                    <li>保质期
+                                    </li>
+                                    <li>30天
+                                    </li>
+                                    <li>贮存条件
+                                    </li>
+                                    <li title="福建漳州">控温10-15℃</li>
+
+                                </ul>
+                            </div>
+
+                        </div>
+                        <div data-tab="item" class="tab_item" style="display: none;">
+                            <div class="p-parameter">
+                                <ul class="p-parameter-list">
+                                    <li>
+                                        1、生鲜“优鲜赔”绿色通道
+                                    </li>
+                                    <li>生鲜自营商品的破损或腐坏等问题，请在商品签收后48小时内提交“优鲜赔”申请，</li>
+                                    <p>100分钟内审核通过后即享补偿，无需返回商品；非鲜活易腐类商品需上门取件。</p>
+                                    <li> 2、专业生鲜客服团队—让您售后无忧
+                                    </li>
+                                    <li>
+                                        微信在线客服：JD-fresh
+                                    </li>
+                                    <li>京东生鲜客服电话：400-606-3311</li>
+                                    <li> 服务时间：09:00-24:00</li>
+                                    <li> 生鲜商品售后政策</li>
+                                </ul>
+                                <p> 注：因厂家会在没有任何提前通知的情况下更改产品包装、产地或者一些附件，京东生鲜不能确保客户收到的货物与商城图片、产地、附件说明完全一致。只能确保为原厂正货！并且保证与当时市场上同样主流新品一致。若京东生鲜没有及时更新，请大家谅解！
+                                </p>
+                            </div>
+                        </div>
+                        <div data-tab="item" class="tab_item" style="display: none;">
+                            <div class="p-parameter">
+                                <ul class="p-parameter-list">
+                                    <li style="font-size: 16px;">
+                                        商品评价
+                                    </li>
+                                </ul>
+                                <ul class="parameter2 p-parameter-list" style="padding-left: 10px;">
+                                    一直喜欢在京东买东西，京东服务好，购买的东西质量有保障，发货快，送货师傅态度好。*其他产品也可以买！！之前就一直想买了，对比了好几家然后下单的，不过自从用了京东，其他的购物网站基本不去了，看中的就是京东卖正品，我作为京东plus会员，一定要良心好评，而且自从用了京东，超市也再也不用去了，京东秒杀一切电商平台，价格也比实体店便宜很多，所有的产品满分，服务满分，售后也满分，物流我为什么喜欢在京东买东西，因为送货速度快，售后好，保质期也都是新鲜的，京东购物这么久，没有一次失望过，每次评价都是全五分。一整个购物过程非常满意，体验很好!无论是服务还是产品本身都满意，所以我会推荐朋友们来京东购物的。
+                                    <p class="parameter2 p-parameter-list">
+                                        昨天收到了，今天才打开吃，超级好吃，酸爽多汁，发个图片大家分享一下。紧接着又给朋友买了几份，尝鲜超值。赞一个
+                                    </p>
+                                    <p class="parameter2 p-parameter-list">
+                                        东西很好噢，有两斤多，嘻嘻，第一次买，下次还来。
+                                    </p>
+                                </ul>
+
+                            </div>
+
+                        </div>
+                        <div data-tab="item" class="tab_item" style="display: none;">
+                            <div class="p-parameter">
+                                <ul class="p-parameter-list">
+                                    <li style="font-size: 16px;">
+                                        商品问答
+                                    </li>
+                                </ul>
+                                <ul class="parameter2 p-parameter-list" style="padding-left: 10px;">
+                                    <h3 style="font-size: 16px;color: #010101;">听甜的红柚和华润五丰的比，哪种好？</h3>
+                                    <p class="parameter2 p-parameter-list">
+                                        华润的那款好吃
+                                    </p>
+
+                                </ul>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="detail-content clearfix">
+                        <div class="detail-content-wrap">
+                            <div class="detail-content-item">
+                                <div class="ssd-module-wrap">
+                                    <div class="ssd-module M15692246509791 animate-M15692246509791">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--footer头部模块制作-->
+    <div id="footer"></div>
+</body>
+<script src="../lib/jquery-1.10.1.min.js"></script>
+<script src="../js/myquery.js"></script>
+<script src="../js/detail.js"></script>
+
+
+</html>
