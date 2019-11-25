@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>注册</title>
+    <!-- 引入favicon.ico图标 -->
+    <link rel="icon" href="favicon.ico">
+    <!-- 引入字体图标样式表 -->
+    <link rel="stylesheet" href="../iconfont/iconfont.css">
+    <!-- 引入初始化样式表 -->
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/reg.css">
+
+</head>
+
+<body>
+    <div id="head">
+        <div class="head">
+            <div class="logo fl"></div>
+            <div class="logo_title fl">欢迎注册</div>
+            <div class="have_account">
+                已有账号？
+                <a href="login.html">请登录</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="container">
+        <div class="container">
+            <form class="box" id="Register" method="post">
+                <div class="r_left">
+                    <div class="r_left_main">
+                        <ul class="right_top">
+                            <li class="user">
+                                <p class="name us"><em>*</em>账号名：</p>
+                                <input type="text" maxlength="20" class="text-box" id="RUserName" name="UserName"
+                                    placeholder="请输入手机号">
+                                <span class="r_remind name_remind"></span>
+                            </li>
+
+                            <li>
+                                <p class="name pw"><em>*</em>设置密码：</p>
+                                <input type="password" placeholder="6-18位字母或数字组成" id="RPassword" name="Password"
+                                    class="text-box">
+                                <span class="r_remind pwd_remind"></span>
+                            </li>
+
+                            <li>
+                                <p class="name conf"><em>*</em>确认密码：</p>
+                                <input type="password" id="RRePassword" name="RePassword" class="text-box">
+                                <span class="r_remind conf_remind"></span>
+                            </li>
+
+
+                            <li class="verify">
+                                <p class="name"><em>*</em>验证码：</p>
+                                <input type="text" id="regValidate" name="Validates" class="text-box">
+                                <div class="txt"></div>
+                                <span class="r_remind verify_remind"></span>
+                            </li>
+
+                        </ul>
+
+                        <ul class="right_bottom">
+                            <li class="li1">
+                                <input type="button" class="registerSlide" id="RegisterSumbitBtn" value="提交注册">
+                            </li>
+
+                            <li class="li2">
+                                <input type="checkbox" checked="checked" id="agree">
+                                <span>我已同意并阅读</span>
+                                <a href="#"><span>《可得用户注册协议》</span></a>
+                                <span class="r_remind check_remind"></span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="d_line"></div>
+                <div class="d_right">
+                    <a href="#"><img src="../img/indeximgs/5aa68632Nd7790d0c.png" /></a>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div id="footer">
+        <div class="foot">
+            <ul>
+                <li><a href="####">关于我们</a></li>
+                <li><a href="####">联系我们</a></li>
+                <li><a href="####">人才招聘</a></li>
+                <li><a href="####">商家入驻</a></li>
+                <li><a href="####">广告服务</a></li>
+                <li><a href="####">手机京东</a></li>
+                <li><a href="####">友情链接</a></li>
+                <li><a href="####">销售联盟</a></li>
+                <li><a href="####">京东社区</a></li>
+                <li><a href="####">京东公益</a></li>
+                <li style="border:none"><a href="####">English Site</a></li>
+            </ul>
+        </div>
+        <p class="banquan">
+            Copyright©2004-2019 京东JD.com 版权所有
+        </p>
+    </div>
+
+
+
+    <script src="../lib/jquery-1.10.1.min.js"></script>
+    <script src="../js/myquery.js"></script>
+    <script src="../js/register.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>头部</title>
+    <!-- 引入字体图标样式表 -->
+    <link rel="stylesheet" href="../iconfont/iconfont.css">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/commom.css">
+</head>
+
+<body>
+    <section class="shortcut">
+        <div class="w">
+            <div class="fl">
+                <ul>
+                    <li class="home">
+                        <span class="iconfont icon-shouye"></span>
+                        <a href="index.html">京东首页</a>&nbsp;&nbsp;&nbsp;
+                    </li>
+
+                    <li class="city" id="ttbar-mycity">
+                        <span class="iconfont icon-dingwei"></span>
+                        广东
+                        <div class="dorpdown-layer">
+                            <div class="ui-areamini-content-wrap" style="left: auto;">
+                                <div class="ui-areamini-content">
+                                    <div class="ui-areamini-content-list clearfix">
+                                        <div class="item"><a data-id="1" href="javascript:void(0)">北京</a></div>
+                                        <div class="item"><a data-id="2" href="javascript:void(0)">上海</a></div>
+                                        <div class="item"><a data-id="3" href="javascript:void(0)">天津</a></div>
+                                        <div class="item"><a data-id="4" href="javascript:void(0)">重庆</a></div>
+                                        <div class="item"><a data-id="5" href="javascript:void(0)">河北</a></div>
+                                        <div class="item"><a data-id="6" href="javascript:void(0)">山西</a></div>
+                                        <div class="item"><a data-id="7" href="javascript:void(0)">河南</a></div>
+                                        <div class="item"><a data-id="8" href="javascript:void(0)">辽宁</a></div>
+                                        <div class="item"><a data-id="9" href="javascript:void(0)">吉林</a></div>
+                                        <div class="item"><a data-id="10" href="javascript:void(0)">黑龙江</a></div>
+                                        <div class="item"><a data-id="11" href="javascript:void(0)">内蒙古</a></div>
+                                        <div class="item"><a data-id="12" href="javascript:void(0)">江苏</a></div>
+                                        <div class="item"><a data-id="13" href="javascript:void(0)">山东</a></div>
+                                        <div class="item"><a data-id="14" href="javascript:void(0)">安徽</a></div>
+                                        <div class="item"><a data-id="15" href="javascript:void(0)">浙江</a></div>
+                                        <div class="item"><a data-id="16" href="javascript:void(0)">福建</a></div>
+                                        <div class="item"><a data-id="17" href="javascript:void(0)">湖北</a></div>
+                                        <div class="item"><a data-id="18" href="javascript:void(0)">湖南</a></div>
+                                        <div class="item"><a data-id="19" href="javascript:void(0)"
+                                                class="selected">广东</a></div>
+                                        <div class="item"><a data-id="20" href="javascript:void(0)">广西</a></div>
+                                        <div class="item"><a data-id="21" href="javascript:void(0)">江西</a></div>
+                                        <div class="item"><a data-id="22" href="javascript:void(0)">四川</a></div>
+                                        <div class="item"><a data-id="23" href="javascript:void(0)">海南</a></div>
+                                        <div class="item"><a data-id="24" href="javascript:void(0)">贵州</a></div>
+                                        <div class="item"><a data-id="25" href="javascript:void(0)">云南</a></div>
+                                        <div class="item"><a data-id="26" href="javascript:void(0)">西藏</a></div>
+                                        <div class="item"><a data-id="27" href="javascript:void(0)">陕西</a></div>
+                                        <div class="item"><a data-id="28" href="javascript:void(0)">甘肃</a></div>
+                                        <div class="item"><a data-id="29" href="javascript:void(0)">青海</a></div>
+                                        <div class="item"><a data-id="30" href="javascript:void(0)">宁夏</a></div>
+                                        <div class="item"><a data-id="31" href="javascript:void(0)">新疆</a></div>
+                                        <div class="item"><a data-id="52993" href="javascript:void(0)">港澳</a></div>
+                                        <div class="item"><a data-id="32" href="javascript:void(0)">台湾</a></div>
+                                        <div class="item"><a data-id="84" href="javascript:void(0)">钓鱼岛</a></div>
+                                        <div class="item"><a data-id="53283" href="javascript:void(0)">海外</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="fr">
+                <ul>
+                    <li id="frfirst">
+                        <a href="login.html" id="loginuser">你好，请登录</a>&nbsp;
+
+                        <a href="register.html" id="regbtn" style="color: #f40213; opacity: 1;">免费注册</a>
+                    </li>
+                    <li></li>
+                    <li>
+                        <a href="index.html" id="logout" style="display: none;">退出</a>&nbsp;
+                    </li>
+                    <li></li>
+
+                    <li>
+                        <a href="member-order.html">我的订单</a>
+                    </li>
+                    <li></li>
+                    <li class="arrow_icon" id="ttbar-myjd">
+                        <a href="member.html">我的京东
+                        </a>
+                        <span class="iconfont icon-jiantou"></span>
+                        <div class="dorpdown-layer">
+                            <div class="myjdlist1">
+                                <div class="fore1">
+                                    <div class="item"> <a href="javascript:;" clstag="" target="_blank">待处理订单<span
+                                                id="num-unfinishedorder"></span></a> </div>
+                                    <div class="item"> <a href="javascript:;" clstag="" target="_blank">返修退换货</a> </div>
+                                    <div class="item"> <a href="javascript:;" clstag="" target="_blank">降价商品<span
+                                                id="num-reduction"></span></a> </div>
+                                </div>
+                                <div class="fore2">
+                                    <div class="item"> <a href="javascript:;" target="_blank">消息<span
+                                                id="num-tip"></span></a> </div>
+                                    <div class="item"> <a href="javascript:;" clstag="" target="_blank">我的问答<span
+                                                id="num-consultation"></span></a> </div>
+                                    <div class="item"> <a href="javascript:;" clstag="" target="_blank">我的关注</a> </div>
+                                </div>
+                            </div>
+                            <div class="myjdlist2">
+                                <div class="fore1">
+                                    <div class="item"> <a href="javascript:;" clstag="" target="_blank">我的京豆</a> </div>
+                                    <div class="item baitiao"><a href="//baitiao.jd.com" target="_blank">京东白条</a></div>
+                                </div>
+                                <div class="fore2">
+                                    <div class="item"> <a href="javascript:;" target="_blank">我的优惠券<span
+                                                id="num-ticket"></span></a> </div>
+                                    <div class="item"> <a href="javascript:;" clstag="" target="_blank">我的理财</a> </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li></li>
+                    <li><a href="###">京东会员</a></li>
+                    <li></li>
+                    <li class="arrow_icon" id="ttbar-ent">
+                        <a href="###">企业采购</a>
+                        <span class="iconfont icon-jiantou"></span>
+                        <div class="dorpdown-layer">
+                            <div class="dd-inner" id="ttbar-ent-main">
+                                <div class="item"><a href="###" target="_blank">企业购</a></div>
+                                <div class="item"><a href="###" target="_blank">商用场景馆</a></div>
+                                <div class="item"><a href="###" target="_blank">工业品</a></div>
+                                <div class="item"><a href="###" target="_blank">礼品卡</a></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li></li>
+                    <li class="arrow_icon" id="ttbar-serv">
+                        <a href="###">客户服务</a>
+                        <span class="iconfont icon-jiantou"></span>
+                        <div class="dorpdown-layer">
+                            <div class="item-client">客户</div>
+                            <div class="item"><a href="###" target="_blank" true="">帮助中心</a></div>
+                            <div class="item"><a href="###" target="_blank" true="">售后服务</a></div>
+                            <div class="item"><a href="### " target="_blank" true="">在线客服</a></div>
+                            <div class="item"><a href="###" target="_blank" true="">意见建议</a></div>
+                            <div class="item"><a href="###" target="_blank" true="">电话客服</a></div>
+                            <div class="item"><a href="###" target="_blank" true="">客服邮箱</a></div>
+                            <div class="item"><a href="###" target="_blank" true="">金融咨询</a></div>
+                            <div class="item"><a href="###" target="_blank" true="">全球售客服</a></div>
+                            <div class="item-business">商户</div>
+                            <div class="item"><a href="###" target="_blank" true="">合作招商</a></div>
+                            <div class="item"><a href="###" target="_blank" true="">成长中心</a></div>
+                            <div class="item"><a href="###" target="_blank" true="">商家后台</a></div>
+                            <div class="item"><a href="###" target="_blank" true="">京麦工作台</a>
+                            </div>
+                            <div class="item"><a href="###" target="_blank" true="">商家帮助</a></div>
+                            <div class="item"><a href="###" target="_blank" true="">规则平台</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li></li>
+                    <li class="arrow_icon" id="ttbar-navs">
+                        <a href="###">网站导航</a>
+                        <span class="iconfont icon-jiantou"></span>
+                        <div class="dorpdown-layer">
+                            <dl class="fore1">
+                                <dt>特色主题</dt>
+                                <dd>
+                                    <div class="item"><a href="###" target="_blank" true="">新品首发</a></div>
+                                    <div class="item"><a href="###" target="_blank" true="">京东金融</a></div>
+                                    <div class="item"><a href="### " target="_blank" true="">全球售</a></div>
+                                    <div class="item"><a href="###" target="_blank" true="">国际站</a></div>
+                                    <div class="item"><a href="###" target="_blank" true="">京东会员</a></div>
+                                    <div class="item"><a href="###" target="_blank" true="">京东预售</a></div>
+                                    <div class="item"><a href="###" target="_blank" true="">买什么</a></div>
+                                    <div class="item"><a href="###" target="_blank" true="">俄语站</a></div>
+                                    <div class="item"><a href="###" target="_blank" true="">装机大师</a></div>
+                                    <div class="item"><a href="###" target="_blank" true="">0元评测</a></div>
+                                    <div class="item"><a href="###" target="_blank" true="">港澳售</a></div>
+                                    <div class="item"><a href="###" target="_blank" true="">优惠券</a></div>
+                                    <div class="item"><a href="###" target="_blank" true="">闪购</a></div>
+                                    <div class="item"><a href="###" target="_blank" true="">印尼站</a></div>
+                                    <div class="item"><a href="###" target="_blank" true="">京东金融科技</a></div>
+                                    <div class="item"><a href="###" target="_blank" true="">陪伴计划</a></div>
+                                    <div class="item"><a href="###" target="_blank" true="">出海招商</a></div>
+                                    <div class="item"><a href="###" target="_blank" true="">拍拍二手</a></div>
+                                </dd>
+                            </dl>
+                            <dl class="fore2">
+                                <dt>行业频道</dt>
+                                <dd>
+                                    <div class="item"><a href="###" target="_blank" true="">手机</a></div>
+                                    <div class="item"><a href="###" target="_blank" true="">智能数码</a></div>
+                                    <div class="item"><a href="### " target="_blank" true="">玩3C</a></div>
+                                    <div class="item"><a href="###" target="_blank" true="">电脑办公</a></div>
+                                    <div class="item"><a href="###" target="_blank" true="">家用电器</a></div>
+                                    <div class="item"><a href="###" target="_blank" true="">京鱼座智能</a></div>
+                                    <div class="item"><a href="###" target="_blank" true="">服装城</a></div>
+                                    <div class="item"><a href="###" target="_blank" true="">京东生鲜</a></div>
+                                    <div class="item"><a href="###" target="_blank" true="">家装城</a></div>
+                                    <div class="item"><a href="###" target="_blank" true="">母婴</a></div>
+                                    <div class="item"><a href="###" target="_blank" true="">食品</a></div>
+                                    <div class="item"><a href="###" target="_blank" true="">农资频道</a></div>
+                                    <div class="item"><a href="###" target="_blank" true="">整车</a></div>
+                                    <div class="item"><a href="###" target="_blank" true="">图书</a></div>
+                                    <div class="item"><a href="###" target="_blank" true="">劳动</a></div>
+                                    <div class="item"><a href="###" target="_blank" true="">防护</a></div>
+                                </dd>
+                            </dl>
+                            <dl class="fore3">
+                                <dt>生活服务</dt>
+                                <dd>
+                                    <div class="item"><a href="###" target="_blank" true="">京东众筹</a></div>
+                                    <div class="item"><a href="###" target="_blank" true="">白条</a></div>
+                                    <div class="item"><a href="### " target="_blank" true="">京东金融App</a></div>
+                                    <div class="item"><a href="###" target="_blank" true="">京东小金库</a></div>
+                                    <div class="item"><a href="###" target="_blank" true="">理财</a></div>
+                                    <div class="item"><a href="###" target="_blank" true="">话费</a></div>
+                                    <div class="item"><a href="###" target="_blank" true="">水电煤</a></div>
+                                    <div class="item"><a href="###" target="_blank" true="">彩票</a></div>
+                                    <div class="item"><a href="###" target="_blank" true="">旅行</a></div>
+                                    <div class="item"><a href="###" target="_blank" true="">机票酒店</a></div>
+                                    <div class="item"><a href="###" target="_blank" true="">电影票</a></div>
+                                    <div class="item"><a href="###" target="_blank" true="">京东到家</a></div>
+                                    <div class="item"><a href="###" target="_blank" true="">游戏</a></div>
+                                    <div class="item"><a href="###" target="_blank" true="">拍拍回收</a></div>
+                                </dd>
+                            </dl>
+                            <dl class="fore4">
+                                <dt>更多精选</dt>
+                                <dd>
+                                    <div class="item"><a href="###" target="_blank" true="">合作招商</a></div>
+                                    <div class="item"><a href="###" target="_blank" true="">京东通信</a></div>
+                                    <div class="item"><a href="### " target="_blank" true="">京东E卡</a></div>
+                                    <div class="item"><a href="###" target="_blank" true="">企业采购</a></div>
+                                    <div class="item"><a href="###" target="_blank" true="">服务市场</a></div>
+                                    <div class="item"><a href="###" target="_blank" true="">办公生活馆</a></div>
+                                    <div class="item"><a href="###" target="_blank" true="">乡村招募</a></div>
+                                    <div class="item"><a href="###" target="_blank" true="">校园加盟</a></div>
+                                    <div class="item"><a href="###" target="_blank" true="">京东社区</a></div>
+                                    <div class="item"><a href="###" target="_blank" true="">游戏社区</a></div>
+                                    <div class="item"><a href="###" target="_blank" true="">知识产权</a></div>
+                                    <div class="item"><a href="###" target="_blank" true="">维权</a></div>
+                                </dd>
+                            </dl>
+                        </div>
+                    </li>
+                    <li></li>
+                    <li class="arrow_icon" id="ttbar-apps">
+                        <a href="###">手机京东</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+</body>
+<script src="../lib/jquery-1.10.1.min.js"></script>
+<script src="../js/myquery.js"></script>
+<script>
+    (function () {
+        let usname = getCookie('username'); //获取用户名显示
+        // console.log(usname)
+
+        $('#logout').click(function () {
+            removeCookie('username');
+            this.attr('href', 'index.html')
+            // $('#loginuser').html("你好，请登录");
+            // $('#logout').css('display', 'none');
+            // $('#regbtn').css('display', 'block')
+        })
+
+        if (usname) {
+            $('#loginuser').html("欢迎你！" + usname);
+            $('#logout').css('display', 'block');
+            $('#regbtn').css('opacity', 0)
+        } else {
+            $('#loginuser').html("你好，请登录");
+            $('#logout').css('display', 'none');
+            $('#regbtn').css('opacity', 1)
+        }
+
+    })()
+</script>
+
+</html>
